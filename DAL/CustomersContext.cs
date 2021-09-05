@@ -20,7 +20,7 @@ namespace DAL
             modelBuilder.Entity<Customer>(entity =>
             {
                 entity.HasIndex(e => e.CustomerID)
-                .HasName("CustomerCode");
+                .HasDatabaseName("CustomerCode");
 
                 entity.HasMany(d => d.Invoice);
  

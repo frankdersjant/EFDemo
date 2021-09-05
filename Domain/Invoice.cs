@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Domain
 {
@@ -11,5 +12,6 @@ namespace Domain
         public DateTime InvoiceDate { get; set; } 
         public virtual Customer customer { get; set; }
 
+        public virtual ICollection<InvoiceLine> InvoiceLines { get; set; }
     }
 }

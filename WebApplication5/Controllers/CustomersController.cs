@@ -140,5 +140,16 @@ namespace WebApplication5.Controllers
             return Ok(CustInvoice);
         }
 
+        [HttpGet("ThenInclude")]
+        public IActionResult ThenInclude()
+        {
+            var CustInvoice = _customersContext.Customer
+                            .Where(c => c.FirstName.StartsWith("Z"))
+                            .Include(i => i.Invoice)
+                            .ThenInclude(j => j.InvoiceLines)
+                            .ToList();
+
+            return Ok(CustInvoice);
+        }
     }
 }
