@@ -20,12 +20,15 @@ namespace DAL
             modelBuilder.Entity<Customer>(entity =>
             {
                 entity.HasIndex(e => e.CustomerID)
-                .HasDatabaseName("CustomerCode");
+                .HasDatabaseName("CustomerCode")
+                .IsUnique();
 
                 entity.HasMany(d => d.Invoice);
- 
-                }
-            );
+
+
+                entity.Property(e => e.FirstName)
+                .HasColumnType("varchar(60)");
+            });
         }
     }
 }
