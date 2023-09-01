@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{6563CB4D-4715-437D-9AC8-60A24152141E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationEFDEmo", "WebApplicationEFDEmo\WebApplicationEFDEmo.csproj", "{5EBF26E7-0288-4472-8A9E-AADC780364CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationEFDemo", "WebApplicationEFDEmo\WebApplicationEFDemo.csproj", "{5EBF26E7-0288-4472-8A9E-AADC780364CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
